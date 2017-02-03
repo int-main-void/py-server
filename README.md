@@ -1,2 +1,4 @@
 # py-server
-simple python web server with Docker image
+
+Simple Python web server, packaged into a Docker image, and with a docker-compose.yml to run it.
+

@@ -1,0 +1,21 @@
+#
+# docker-compose.yml for python server
+#
+version: '2'
+services:
+  server:
+    image: "mwn-python-server:dev-latest"
+    ports:
+      - "5080:5080"
+      - "9443:443"
+    volumes:
+      - ./log:/opt/app/log
+    environment:
+#      - HOST=''
+      - PORT=5080
+    entrypoint:
+      - python
+      - src/main/python/server.py
+
+
+        
